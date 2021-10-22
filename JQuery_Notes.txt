@@ -1,0 +1,91 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+// add in the <head> portion of the HTML or right before the ending tag for the body
+
+if jquery code is inserted in <head>
+<head>
+<script>
+   $(document).ready(function() {
+       // your jquery codes here
+   });
+</script>
+</head>
+// needs to have document ready because it loads before the body does
+
+if jquery code is inserted before ending of body
+<script>
+  // your jquery codes here
+</script>
+</body>
+//
+
+$('grab whatever').event();
+// dollar sign, quotes, parenthesis followed by .whateveryouwanttodo
+
+$(h1, h4, li, p').show(); vs $(h1 h4 li p')
+// the commas tell jquery to grab all h1, all h4, all li, and all paragraphs
+// no commas and spaces mean grab p inside li inside h4 inside h1
+
+$('p.sp').show
+// paragraph that has the class sp
+//grabs <p class='sp'></p>
+
+$('p .sp').show
+// element that has a class sp that is in p tab
+// grabs <p><div class = 'sp'><</div></p>
+
+.html()
+// edits the HTML using jquery
+// i.e. .html('<b>Coding</b>') bolds Coding using HTML
+
+.text('')
+// changes the text to exactly is in the quotes
+
+.after('')
+// adds text after/below whatever is written before period
+// i.e. $('h1').after('Hello') adds Hello after all h1's.
+
+.before('')
+// adds before the item
+
+.prepend('')
+// adds in front of the item
+
+.append('')
+// adds immediately after the item
+
+$('#email').attr('placeholder')
+//grabs from the id, email, and pulls whatever is placed in the placeholder slot
+
+.parent()
+//grabs the parent
+
+Effects (functions to do some cool animation effects)
+.hide()
+.show()
+.toggle()
+.slideUp() - not available in the slim version
+.slideDown() - not available in the slim version
+.slideToggle() - not available in the slim version
+.fadeOut() - not available in the slim version
+.fadeIn() - not available in the slim version
+CSS (adding or removing a class for any HTML element/DOM)
+.addClass()
+.removeClass()
+
+.css()
+// .css() edits anything that has a .css
+
+Manipulation (retrieving or setting value or text in any HTML element)
+.after()
+.append()
+.prepend()
+.attr()
+.before()
+.html()
+.text()
+.val()
+Events (functions to handle an event)
+.click()
+
+.hover()
+// .hover() can have two functions
